@@ -28,8 +28,7 @@ build/
 *.pyo
 .pytest_cache/
 
-# Uploads and temp files
-uploads/
+# temp files
 *.log
 .coverage
 
