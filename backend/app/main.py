@@ -10,6 +10,9 @@ from app.api.errors import register_handlers
 from app.domain.models import Base
 from app.db.session import engine
 
+from pathlib import Path
+import os
+
 def create_app() -> FastAPI:
     app = FastAPI(
         title="GIC Cafe/Employee API",
@@ -33,7 +36,7 @@ def create_app() -> FastAPI:
     register_handlers(app)
     uploads_dir = Path("uploads")
     uploads_dir.mkdir(exist_ok=True)
-    
+
     cafes_dir = uploads_dir / "cafes"
     cafes_dir.mkdir(exist_ok=True)
     # Routers
