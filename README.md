@@ -4,7 +4,7 @@
 - Docker & Docker Compose
 
 ### Run with Docker
-`git clone https://github.com/YOUR_USERNAME/gic-platform.git`
+`git clone https://github.com/YOUR_USERNAME/Cafe-Manager.git`
 
 `cd gic-platform`
 
@@ -17,4 +17,6 @@ Then visit:
 
 
 ## Stop Application
-docker-compose down
+
+`docker-compose down`
+
