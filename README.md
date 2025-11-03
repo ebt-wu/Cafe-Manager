@@ -17,4 +17,5 @@ Then visit:
 
 
 ## Stop Application
-docker-compose down
+
+`docker-compose down`
