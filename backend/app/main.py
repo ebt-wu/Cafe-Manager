@@ -31,7 +31,11 @@ def create_app() -> FastAPI:
 
     # Error handlers
     register_handlers(app)
-
+    uploads_dir = Path("uploads")
+    uploads_dir.mkdir(exist_ok=True)
+    
+    cafes_dir = uploads_dir / "cafes"
+    cafes_dir.mkdir(exist_ok=True)
     # Routers
     app.include_router(cafes.router, prefix=settings.API_PREFIX)
     app.include_router(employees.router, prefix=settings.API_PREFIX)
